@@ -29,14 +29,15 @@ nav ul li {
   list-style: none;
   display: inline-block;
   padding: 10px 20px;
+  font-size: 25px;
 }
 nav ul li a {
-  color: palevioletred;
+  color: #fd4766;
   position: relative;
   padding: 5px 0;
 }
 nav ul li a:hover {
-  color: #fd4766;
+  color: #fd2c4f;
 }
 nav ul li a:after {
   content: "";
@@ -44,7 +45,7 @@ nav ul li a:after {
   left: 0;
   width: 0;
   height: 3px;
-  background: #fd4766;
+  background: #fd2c4f;
   transition: 0.3s;
   bottom: 0;
 }
