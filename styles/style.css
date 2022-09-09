@@ -199,7 +199,7 @@ nav ul li a:hover:after {
   animation: move-background 70s linear infinite;
 }
 
-.clouds {
+/* .clouds {
   width: 10000px;
   height: 100%;
   background: transparent
@@ -208,4 +208,4 @@ nav ul li a:hover:after {
   background-size: 1000px 1000px;
   position: absolute;
   right: 0;
-}
+} */
