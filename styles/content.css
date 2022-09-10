@@ -60,6 +60,7 @@ textarea {
 }
 
 .send-button {
+  padding-top: 7px;
   margin-top: 15px;
   height: 34px;
   width: 400px;
