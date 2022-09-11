@@ -33,7 +33,7 @@ h1 {
   margin: 0 auto;
   padding: 40px 0;
   font: 300 60px "Oswald", sans-serif;
-  color: #fd4766;
+  color: var(--clr-neon);
   text-transform: uppercase;
   letter-spacing: 6px;
 }
