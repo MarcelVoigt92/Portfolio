@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
+:root {
+  --clr-neon: hsl(317 100% 54%);
+  --clr-bg: hsl(323 21% 16%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -49,6 +54,10 @@ h1 {
   max-width: 400px;
   font-family: "Lato";
   font-weight: 400;
+}
+
+textarea {
+  width: 167px;
 }
 
 .form-control,
@@ -266,4 +275,65 @@ hr {
   .send-button {
     width: 99%;
   }
+}
+
+.neonBtn {
+  color: var(--clr-neon);
+  display: inline-block;
+  margin: 80px auto;
+  cursor: pointer;
+  display: flex;
+  width: 200px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: var(--clr-neon) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.125em hsl(0, 0%, 100%), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  transition: background-color 100ms linear;
+}
+
+.neonBtn::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--clr-neon);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1.5em);
+  opacity: 0.7;
+}
+
+.neonBtn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-neon);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 100ms linear;
+}
+
+.neonBtn:hover::before {
+  opacity: 1;
+}
+
+.neonBtn:hover,
+.neonBtn:focus {
+  background-color: var(--clr-neon);
+  color: var(--clr-bg);
+  text-shadow: none;
+}
+
+.neonBtn:hover::after {
+  opacity: 1;
 }
