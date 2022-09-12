@@ -32,6 +32,10 @@ ul a {
   height: 100%;
 }
 
+::placeholder {
+  color: rgb(88 199 250 / 100%);
+}
+
 .section-header {
   text-align: center;
   margin: 0 auto;
@@ -68,7 +72,7 @@ textarea {
 textarea {
   max-width: 400px;
   background-color: #000;
-  color: #fd4766;
+  color: rgb(88 199 250 / 100%);
   letter-spacing: 1px;
 }
 

@@ -50,15 +50,20 @@ h1 {
   padding: 2px;
   border-radius: 15px;
   margin-bottom: 5px;
-  font-size: 14px;
+  font-size: 1.2rem;
   color: #fff;
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 .bar::before {
   content: attr(data-skill);
-  background-color: var(--clr-neon);
-  color: black;
+  background: linear-gradient(
+    120deg,
+    #1c99fe 20.69%,
+    #7644ff 50.19%,
+    #fd4766 79.69%
+  );
+  color: #ffffff;
   display: inline-block;
   padding: 5px 0 5px 10px;
   border-radius: inherit;
@@ -69,12 +74,22 @@ h1 {
 }
 
 .bar.front::before {
-  background-color: var(--clr-neon);
-  color: black;
+  background: linear-gradient(
+    120deg,
+    #1c99fe 20.69%,
+    #7644ff 50.19%,
+    #fd4766 79.69%
+  );
+  color: #ffffff;
 }
 .bar.back::before {
-  background-color: var(--clr-neon);
-  color: black;
+  background: linear-gradient(
+    120deg,
+    #1c99fe 20.69%,
+    #7644ff 50.19%,
+    #fd4766 79.69%
+  );
+  color: #ffffff;
 }
 
 .bar.learning::before {
