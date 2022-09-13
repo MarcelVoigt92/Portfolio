@@ -297,6 +297,7 @@ hr {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  font-size: 1.3rem;
   border: var(--clr-neon) 0.125em solid;
   padding: 0.25em 1em;
   border-radius: 0.25em;
