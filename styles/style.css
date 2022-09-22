@@ -28,10 +28,7 @@ nav {
   justify-content: space-between;
   padding: 30px 100px;
 }
-.logo {
-  max-height: 500px;
-  background: transparent;
-}
+
 nav ul li {
   list-style: none;
   display: inline-block;

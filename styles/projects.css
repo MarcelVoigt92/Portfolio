@@ -50,14 +50,24 @@ img {
   transition: 0.4s ease-out;
 }
 
-a {
+.live,
+.git {
   color: rgb(88 199 250 / 100%);
   font-weight: 300;
   position: absolute;
-  left: 20px;
-  top: 15px;
+
   text-decoration: none;
   font-size: 1.5rem;
+}
+
+.live {
+  left: 20px;
+  top: 15px;
+}
+
+.git {
+  left: 20px;
+  top: 45px;
 }
 
 a:hover {
